@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quantrium.verifydoc.Takepicture">
+    <LinearLayout
+        android:id="@+id/layout_final_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headertext_height"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OnBoard"
+            style="@style/NewStyle"
+            android:textColor="#006600"
+            android:textSize="@dimen/header_text"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_layout"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_Success"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_final_header"
+        />
+    <TextView
+        android:id="@+id/text_view_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_Success"
+        android:layout_marginTop="30dp"
+        android:text="Verified Successfully"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/header_text"
+        android:padding="@dimen/padding_layout"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border"
+        android:text="Done"
+        android:textSize="@dimen/normal_text"
+        android:textAllCaps="false"
+        android:textColor="#ffff"/>
+
+</RelativeLayout>

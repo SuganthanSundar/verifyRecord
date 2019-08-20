@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NormalPic">
+    <LinearLayout
+        android:id="@+id/layout_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OnBoard"
+            android:textColor="#006600"
+            android:textSize="16sp"
+            android:gravity="center"
+            style="@style/NewStyle"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_alert_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pan_verify_alertText"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/layout_main_header"
+        android:padding="25dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pic_text"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2.2"
+            >
+            <Button
+                android:id="@+id/but_retake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Retake"
+                android:textColor="#ffff"
+                android:background="@drawable/white_round"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"/>
+
+            <Button
+                android:id="@+id/but_use_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Proceed"
+                android:textColor="#ffff"
+                android:background="@drawable/round_border"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
